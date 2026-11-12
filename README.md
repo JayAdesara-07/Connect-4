@@ -39,7 +39,7 @@ Or simply `make all` (or `make quick` for a fast end-to-end pass).
 Everything is seeded (`--seed`), so results are reproducible.
 Use `--games 100` for tighter confidence; `run_benchmarks.py --only pruning` to run one experiment.
 
-## Method (what each resume bullet maps to)
+## Method
 | Bullet | Implementation |
 |---|---|
 | Four AI agents | `agents.py`: Random; Minimax (negamax, no pruning); Alpha-Beta (pruning + centre-first ordering); MCTS (UCT, random or "smart" rollouts). Minimax and Alpha-Beta share one heuristic (69 four-cell windows + centre bonus), so differences come only from the search. |
