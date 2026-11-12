@@ -1,0 +1,3 @@
+# Core project uses only the Python standard library (Python 3.9+; 3.10+ is faster).
+# matplotlib is needed only for make_report.py (plots).
+matplotlib>=3.5

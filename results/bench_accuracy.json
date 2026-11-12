@@ -1,0 +1,82 @@
+{
+  "ref_depth": 6,
+  "positions": 30,
+  "tactical_n": [
+    30,
+    30
+  ],
+  "rows": [
+    {
+      "agent": "Random",
+      "ref_optimal_pct": 23.333333333333332,
+      "blunder_pct": 33.333333333333336,
+      "win_in_1_pct": 6.666666666666667,
+      "block_in_1_pct": 10.0,
+      "ms_per_move": 0.0011800012240807216
+    },
+    {
+      "agent": "AlphaBeta(d=1)",
+      "ref_optimal_pct": 76.66666666666667,
+      "blunder_pct": 0.0,
+      "win_in_1_pct": 100.0,
+      "block_in_1_pct": 96.66666666666667,
+      "ms_per_move": 0.10374664173771937
+    },
+    {
+      "agent": "AlphaBeta(d=2)",
+      "ref_optimal_pct": 83.33333333333333,
+      "blunder_pct": 0.0,
+      "win_in_1_pct": 100.0,
+      "block_in_1_pct": 96.66666666666667,
+      "ms_per_move": 0.3384133257592718
+    },
+    {
+      "agent": "AlphaBeta(d=4)",
+      "ref_optimal_pct": 86.66666666666667,
+      "blunder_pct": 0.0,
+      "win_in_1_pct": 100.0,
+      "block_in_1_pct": 96.66666666666667,
+      "ms_per_move": 2.3494066670536995
+    },
+    {
+      "agent": "Minimax(d=4)",
+      "ref_optimal_pct": 86.66666666666667,
+      "blunder_pct": 0.0,
+      "win_in_1_pct": 100.0,
+      "block_in_1_pct": 96.66666666666667,
+      "ms_per_move": 16.593736635210615
+    },
+    {
+      "agent": "MCTS(n=100)",
+      "ref_optimal_pct": 60.0,
+      "blunder_pct": 3.3333333333333335,
+      "win_in_1_pct": 96.66666666666667,
+      "block_in_1_pct": 80.0,
+      "ms_per_move": 4.3820533047740655
+    },
+    {
+      "agent": "MCTS(n=500)",
+      "ref_optimal_pct": 66.66666666666667,
+      "blunder_pct": 0.0,
+      "win_in_1_pct": 100.0,
+      "block_in_1_pct": 90.0,
+      "ms_per_move": 16.045136656612158
+    },
+    {
+      "agent": "MCTS(n=2000)",
+      "ref_optimal_pct": 83.33333333333333,
+      "blunder_pct": 0.0,
+      "win_in_1_pct": 100.0,
+      "block_in_1_pct": 96.66666666666667,
+      "ms_per_move": 63.73522666593393
+    },
+    {
+      "agent": "MCTS+smart(n=2000)",
+      "ref_optimal_pct": 86.66666666666667,
+      "blunder_pct": 0.0,
+      "win_in_1_pct": 100.0,
+      "block_in_1_pct": 96.66666666666667,
+      "ms_per_move": 142.17416001483798
+    }
+  ]
+}

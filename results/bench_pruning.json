@@ -1,0 +1,65 @@
+{
+  "positions": 30,
+  "rows": [
+    {
+      "depth": 1,
+      "minimax_nodes": 6.633333333333334,
+      "minimax_ms": 0.17766332409034172,
+      "alphabeta_nodes": 6.633333333333334,
+      "alphabeta_ms": 0.19492333134015402,
+      "node_reduction_pct": 0.0,
+      "speedup_x": 0.9114523277888553,
+      "value_match_pct": 100.0
+    },
+    {
+      "depth": 2,
+      "minimax_nodes": 38.06666666666667,
+      "minimax_ms": 2.0416900205115476,
+      "alphabeta_nodes": 21.0,
+      "alphabeta_ms": 0.5597866683577498,
+      "node_reduction_pct": 44.833625218914186,
+      "speedup_x": 3.647264459693669,
+      "value_match_pct": 100.0
+    },
+    {
+      "depth": 3,
+      "minimax_nodes": 193.86666666666667,
+      "minimax_ms": 3.8607766929393015,
+      "alphabeta_nodes": 63.9,
+      "alphabeta_ms": 1.2328300159424543,
+      "node_reduction_pct": 67.03920220082532,
+      "speedup_x": 3.131637486931137,
+      "value_match_pct": 100.0
+    },
+    {
+      "depth": 4,
+      "minimax_nodes": 1170.8333333333333,
+      "minimax_ms": 28.57569665648043,
+      "alphabeta_nodes": 163.3,
+      "alphabeta_ms": 3.7584300230567655,
+      "node_reduction_pct": 86.0526690391459,
+      "speedup_x": 7.603093973062602,
+      "value_match_pct": 100.0
+    },
+    {
+      "depth": 5,
+      "minimax_nodes": 6853.033333333334,
+      "minimax_ms": 156.94020003235588,
+      "alphabeta_nodes": 484.46666666666664,
+      "alphabeta_ms": 10.146126655551294,
+      "node_reduction_pct": 92.93062439503674,
+      "speedup_x": 15.467991417837123,
+      "value_match_pct": 100.0
+    },
+    {
+      "depth": 6,
+      "alphabeta_nodes": 1165.7333333333333,
+      "alphabeta_ms": 22.503126653221745
+    },
+    {
+      "depth": 7,
+      "alphabeta_nodes": 3615.366666666667,
+      "alphabeta_ms": 70.14112662679206
+    }
+  ]
+}
