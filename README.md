@@ -46,12 +46,3 @@ Use `--games 100` for tighter confidence; `run_benchmarks.py --only pruning` to 
 | Round-robin tournaments | `arena.round_robin`: every pair plays colour-swapped game pairs from the same random 2-ply opening (cancels luck and first-move advantage). Outputs win/draw/loss, score %, Bradley-Terry Elo. |
 | Search efficiency per strategy | Every move logs nodes searched (rollouts for MCTS), wall time and depth reached → `ms/move`, `nodes/move`, `strength_vs_cost.png`. |
 | Pruning & rollout trade-offs under time budgets | Benchmark A: nodes/time vs depth, with a check that Alpha-Beta returns the *same value* as Minimax. Benchmark B: iterative-deepening Minimax/Alpha-Beta vs time-limited MCTS at 0.01/0.05/0.2 s per move. Benchmark C: % of moves optimal against a depth-6 reference, blunder rate, win-in-1/block-in-1 tests, MCTS rollout sweep (100/500/2000) and smart vs random rollouts. |
-
-## Notes / honest caveats
-* Alpha-Beta never changes the *value* of the search, only its cost. At equal depth it should tie Minimax in strength while using far fewer nodes; its real advantage is reaching deeper in the same time.
-* Python is slow, so MCTS gets few rollouts per second; its ranking can change with a faster language or more time.
-* Elo is computed from your games only; add games (`--games`) for stable numbers.
-* Your numbers will differ from any sample numbers, depending on your machine — quote the ones you generate.
-
-## Suggested resume line after running
-“Built StratNet4 … Alpha-Beta cut nodes searched by X% at depth N with identical move values, reached depth D vs M under a 50 ms budget, and ranked #1 by Elo over Minimax/MCTS/Random across K games.” (fill X, N, D, M, K from `results/REPORT.md`)
